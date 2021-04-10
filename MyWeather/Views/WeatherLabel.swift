@@ -26,7 +26,7 @@ class WeatherLabel: UILabel {
     
     convenience init(text: String, font: UIFont, alignment: NSTextAlignment) {
         self.init(frame: .zero)
-        self.text = text
+        self.text = text 
         self.font = font
         self.textAlignment = alignment
     }
@@ -36,6 +36,7 @@ class WeatherLabel: UILabel {
     }
     
     private func configure() {
+        numberOfLines = 1
         adjustsFontSizeToFitWidth = true
         translatesAutoresizingMaskIntoConstraints = false
     }

@@ -23,9 +23,15 @@ class WeatherButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
+//    override func layoutSubviews() {
+//        self.layer.masksToBounds = true
+//        self.layer.cornerRadius = self.frame.height / 2
+//        self.backgroundColor = .systemBackground
+//    }
+    
     private func configure() {
         self.isEnabled = true
-        self.tintColor = .black
+        self.isUserInteractionEnabled = true
         self.translatesAutoresizingMaskIntoConstraints = false
     }
 }

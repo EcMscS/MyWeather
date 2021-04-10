@@ -8,10 +8,7 @@
 import UIKit
 
 enum SFSymbols {
-    
     static let location = UIImage(systemName: "mappin.and.ellipse")
-
-    
 }
 
 enum WeatherImages {
@@ -34,6 +31,7 @@ enum WeatherImages {
 
 enum CustomIcons {
     static let customCurrentLocation = UIImage(named: "currentLocation")
+    static let selectedBar = UIImage(named: "Bottom_Bar")
 }
 
 enum TimeOfDay {
@@ -41,6 +39,31 @@ enum TimeOfDay {
     static let nightTime = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
 }
 
-enum timeSegments {
-    static let times = ["Yesterday", "Today", "Week"]
+enum TimeSegments {
+    static let times = ["Today", "Week"]
+}
+
+enum BackgroundImages {
+    static let weatherBackground = UIImage(named: "weatherBackground")
+}
+
+enum CustomColors {
+    static let backgroundColorForCollectionCell = UIColor(named: "backgroundColors")
+}
+
+enum CustomFont {
+    static let temperatureLabelFont = "GillSans-Bold"
+}
+
+enum TestingURL {
+    //Test Working URL
+    static let testURL = "https://api.openweathermap.org/data/.5/weather?&units=imperial&appid=5d45ea72e4f8237b4804947b3c28aa14&q=Los%20Angeles"
+    static let testURL2 = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=5d45ea72e4f8237b4804947b3c28aa14&q=London"
+    static let testURL3 = "https://api.openweathermap.org/data/2.5/weather?&units=imperial&lat=35&lon=139&appid=5d45ea72e4f8237b4804947b3c28aa14"
+    static let oneCallURL = "https://api.openweathermap.org/data/2.5/onecall?&units=imperial&lat=51.5085&lon=-0.1257&exclude=minutely,alerts&appid=5d45ea72e4f8237b4804947b3c28aa14"
+}
+
+enum WeatherOneCallExclusion {
+    static let excludeMinutesAndAlerts = "minutely,alerts"
+    static let excludeAll = "hourly,daily,minutely,alerts"
 }
